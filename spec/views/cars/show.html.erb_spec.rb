@@ -1,18 +1,18 @@
 require 'rails_helper'
 
-RSpec.describe "cars/show", type: :view do
+RSpec.describe 'cars/show', type: :view do
   before(:each) do
     @car = assign(:car, Car.create!(
-      name: "Name",
-      description: "MyText",
-      image_url: "Image Url",
-      model: 2,
-      hourly_rate: 3.5,
-      user: nil
-    ))
+                          name: 'Name',
+                          description: 'MyText',
+                          image_url: 'Image Url',
+                          model: 2,
+                          hourly_rate: 3.5,
+                          user: nil
+                        ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/MyText/)
