@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add devise for authentication
 gem 'devise'
+
+# Add rubocop for code quality
+gem 'rubocop', '>= 1.0', '< 2.0'
