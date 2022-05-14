@@ -30,11 +30,10 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Hola mundo"
   cars:
-    name: "Name"
-    description: "Description"
-    image_url: "Image URL"
-    model: "Model"
-    hourly_rate: "Hourly rate"
-
+    name: "Nombre"
+    description: "Descripción"
+    image_url: "URL de la imagen"
+    model: "Modelo"
+    hourly_rate: "Tarifa por hora"
