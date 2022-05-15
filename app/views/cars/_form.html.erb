@@ -1,7 +1,7 @@
 <%= form_with(model: car, html: {class: 'm-4'}) do |form| %>
   <% if car.errors.any? %>
     <div id="error_explanation" class="alert alert-danger" role="alert">
-      <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
+      <h2><%= t('general.error', :count => car.errors.count) %> <%= t('cars.invalid') %>:</h2>
 
       <ul>
         <% car.errors.each do |error| %>

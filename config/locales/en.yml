@@ -32,9 +32,14 @@
 en:  
   general:
     back: "Back"
+    error:
+      zero: "No errors"
+      one: "One error"
+      other: "%{count} errors"
   main:
     welcome_msg: "Welcome to FletX, transport at your hands"
   cars:
+    invalid: " do not allow this car to be registered"
     rent: "Rent a car"
     rent_title: "Rent a car for your trip"
     rent_description: "Rent a car for your trip, or for merchandise transportation"

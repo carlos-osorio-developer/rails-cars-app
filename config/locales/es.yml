@@ -30,11 +30,47 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    models:
+      user: 'Usuario'
+      car: 'Carro'
+    attributes:
+      user:
+        name: 'Nombre'
+        password: 'Contraseña'
+        email: 'Correo electrónico'
+        phone: 'Teléfono'
+        address: 'Dirección'
+      car:
+        name: 'Nombre'
+        image_url: 'URL de imagen'
+        description: 'Descripción'
+        model: 'Modelo'
+        hourly_rate: 'Tarifa por hora'        
+    errors:
+      messages:
+        record_invalid: 'Huboleishon %{errors}'
+  errors:
+    format: '%{attribute}%{message}'
+    messages:
+      # You should also include translations for other ActiveRecord errors such as "empty", "taken", etc.
+      blank: ' no puede estar en blanco'
+      taken: ' ya está en uso'
+      empty: ' no puede estar vacío'
+      invalid: ' no es válido'
+      confirmation: ' no coincide con %{attribute}'
+      too_long: ' es demasiado largo (máximo %{count} caracteres)'
+      too_short: ' es demasiado corto (mínimo %{count} caracteres)'      
   main:
     welcome_msg: "Bienvenido a FletX, transportes a su alcance"
   general:
     back: "Regresar"
+    error:
+      zero: "Ningún error"
+      one: "Un error"
+      other: "%{count} errores"
   cars:
+    invalid: " no permiten que este vehículo se registre"
     rent: "Alquilar un auto"
     rent_title: "Alquilar un auto para su viaje"
     rent_description: "Alquila un auto para transportarte a tu destino, o transportar tu mercancía"
