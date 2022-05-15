@@ -46,3 +46,7 @@ en:
     log_action: "Log in"
     sign_action: "Sign up"
     forgot_password: "Forgot your password?"
+  navbar:
+    title: "Cars Rental App"
+    cars: "Cars"
+    

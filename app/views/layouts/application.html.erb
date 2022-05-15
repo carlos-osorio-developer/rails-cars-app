@@ -12,6 +12,8 @@
   </head>
 
   <body>
+    <%= render 'layouts/header', class: 'alert alert-success' %>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>

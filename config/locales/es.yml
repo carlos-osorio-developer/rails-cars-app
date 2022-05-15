@@ -46,3 +46,6 @@ en:
     log_action: "Ingresar"
     sign_action: "Registrarse"
     forgot_password: "Olvidé mi contraseña"
+  navbar:
+    title: "Renta tu carro"
+    cars: "Carros"
