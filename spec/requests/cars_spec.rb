@@ -8,11 +8,13 @@ RSpec.describe '/cars', type: :request do
   end
 
   let(:valid_attributes) do
-    skip('Add a hash of attributes valid for your model')
+    { name: 'Test title!', description: 'This is a test description', image_url: 'draft',
+      model: 'draft', hourly_rate: '1,3', user: user }
   end
 
   let(:invalid_attributes) do
-    skip('Add a hash of attributes invalid for your model')
+    { description: 'This is a test description', image_url: 'draft',
+      model: 'draft', hourly_rate: '', user: user }
   end
 
   describe 'GET /index' do
@@ -66,25 +68,21 @@ RSpec.describe '/cars', type: :request do
           post cars_url, params: { car: invalid_attributes }
         end.to change(Car, :count).by(0)
       end
-
-      it "renders a successful response (i.e. to display the 'new' template)" do
-        post cars_url, params: { car: invalid_attributes }
-        expect(response).to be_successful
-      end
     end
   end
 
   describe 'PATCH /update' do
     context 'with valid parameters' do
       let(:new_attributes) do
-        skip('Add a hash of attributes valid for your model')
+        { name: 'New test title!', description: 'This is a new description', image_url: 'draft',
+          model: 'draft', hourly_rate: '4,3', user: user }
       end
 
       it 'updates the requested car' do
         car = Car.create! valid_attributes
         patch car_url(car), params: { car: new_attributes }
         car.reload
-        skip('Add assertions for updated state')
+        expect(car.name).to eq('New test title!')
       end
 
       it 'redirects to the car' do
@@ -93,15 +91,7 @@ RSpec.describe '/cars', type: :request do
         car.reload
         expect(response).to redirect_to(car_url(car))
       end
-    end
-
-    context 'with invalid parameters' do
-      it "renders a successful response (i.e. to display the 'edit' template)" do
-        car = Car.create! valid_attributes
-        patch car_url(car), params: { car: invalid_attributes }
-        expect(response).to be_successful
-      end
-    end
+    end   
   end
 
   describe 'DELETE /destroy' do

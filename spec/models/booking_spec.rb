@@ -1,5 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe Booking, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:user) { FactoryBot.create(:user) }
+  let(:car) { FactoryBot.create(:car) }
+
+  describe 'when user_id is empty' do
+    it 'should not be valid' do
+      booking = Booking.new(user_id: nil, car_id: car.id, hours: 2)
+      expect(booking.valid?).to be false
+      expect(booking.errors.full_messages).to include('User must exist')
+    end
+  end
 end
