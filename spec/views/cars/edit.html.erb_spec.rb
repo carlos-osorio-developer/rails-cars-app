@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'cars/edit', type: :view do
+  let(:user) { FactoryBot.create(:user) }
   before(:each) do
     @car = assign(:car, Car.create!(
                           name: 'MyString',
@@ -8,7 +9,7 @@ RSpec.describe 'cars/edit', type: :view do
                           image_url: 'MyString',
                           model: 1,
                           hourly_rate: 1.5,
-                          user: nil
+                          user: user
                         ))
   end
 
@@ -25,8 +26,6 @@ RSpec.describe 'cars/edit', type: :view do
       assert_select 'input[name=?]', 'car[model]'
 
       assert_select 'input[name=?]', 'car[hourly_rate]'
-
-      assert_select 'input[name=?]', 'car[user_id]'
     end
   end
 end

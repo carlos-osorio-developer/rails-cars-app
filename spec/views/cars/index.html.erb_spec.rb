@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'cars/index', type: :view do
+  let(:user) { FactoryBot.create(:user) }
+  let(:user1) { FactoryBot.create(:user) }
   before(:each) do
     assign(:cars, [
              Car.create!(
@@ -9,7 +11,7 @@ RSpec.describe 'cars/index', type: :view do
                image_url: 'Image Url',
                model: 2,
                hourly_rate: 3.5,
-               user: nil
+               user: user
              ),
              Car.create!(
                name: 'Name',
@@ -17,7 +19,7 @@ RSpec.describe 'cars/index', type: :view do
                image_url: 'Image Url',
                model: 2,
                hourly_rate: 3.5,
-               user: nil
+               user: user1
              )
            ])
   end
@@ -29,6 +31,5 @@ RSpec.describe 'cars/index', type: :view do
     assert_select 'tr>td', text: 'Image Url'.to_s, count: 2
     assert_select 'tr>td', text: 2.to_s, count: 2
     assert_select 'tr>td', text: 3.5.to_s, count: 2
-    assert_select 'tr>td', text: nil.to_s, count: 2
   end
 end
