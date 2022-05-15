@@ -31,6 +31,8 @@
 
 en:
   hello: "Hello world"
+  general:
+    back: "Back"
   cars:
     name: "Name"
     description: "Description"
@@ -38,8 +40,10 @@ en:
     model: "Model"
     hourly_rate: "Hourly rate"
   users:
-    login: "Login"
+    login: "Login"    
     signup: "Sign up"
+    edit: "Edit user data"
+    cancel: "Cancel my account"
     name: "Name"
     email: "Email"
     address: "Address"
@@ -48,8 +52,16 @@ en:
     password_confirmation: "Password confirmation"
     remember_me: "Remember me"
     log_action: "Log in"
+    logout_action: "Log out"
     sign_action: "Sign up"
+    update_action: "Update"
     forgot_password: "Forgot your password?"
+    current_password: "Current password"
+    password_unchange: "(leave blank if you don't want to change it)"
+    password_explaining: "(we need your current password to confirm your changes)"
+    min_chars: "characters minimum"
+    are_you_unhappy: "Unhappy?"
+    cancel_confirmation: "Are you sure?"
   navbar:
     title: "Cars Rental App"
     cars: "Cars"

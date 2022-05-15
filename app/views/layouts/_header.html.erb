@@ -14,11 +14,11 @@
       <%= link_to t('navbar.cars'), cars_path, class:"nav-link text-light" %>
       <a class="nav-link text-light">|</a>
       <% if current_user %>
-        <%= link_to current_user.name, edit_user_registration_path, class:"nav-link" %>
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"nav-link text-light" %>
+        <%= link_to current_user.name, edit_user_registration_path, class:"nav-link text-light" %>
+        <%= link_to t('users.logout_action'), destroy_user_session_path, method: :delete, class:"nav-link text-light" %>
       <% else %>
-        <%= link_to "Log in", new_user_session_path, class:"nav-link text-light" %>
-        <%= link_to "Register", new_user_registration_path, class:"nav-link text-light" %>      
+        <%= link_to t('users.log_action'), new_user_session_path, class:"nav-link text-light" %>
+        <%= link_to t('users.sign_action'), new_user_registration_path, class:"nav-link text-light" %>      
       <% end %>
       </div>
     </div>

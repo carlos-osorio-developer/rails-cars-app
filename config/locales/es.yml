@@ -31,6 +31,8 @@
 
 en:
   hello: "Hola mundo"
+  general:
+    back: "Regresar"
   cars:
     name: "Nombre"
     description: "Descripción"
@@ -40,6 +42,8 @@ en:
   users:
     login: "Ingreso"
     signup: "Registro"
+    edit: "Editar datos de usuario"
+    cancel: "Cancelar mi cuenta"
     name: "Nombre"
     email: "Correo electrónico"
     address: "Dirección"
@@ -48,8 +52,16 @@ en:
     password_confirmation: "Confirmación de contraseña"
     remember_me: "Recordarme"
     log_action: "Ingresar"
+    logout_action: "Cerrar sesión"
     sign_action: "Registrarse"
+    update_action: "Actualizar"
     forgot_password: "Olvidé mi contraseña"
+    current_password: "Contraseña actual"
+    password_unchange: "(dejar en blanco si no quiere cambiarla)"
+    password_explaining: "(necesitamos su contraseña actual para confirmar los cambios)"
+    min_chars: "caracteres al menos"
+    are_you_unhappy: "¿Insatisfecho?"
+    cancel_confirmation: "¿Está seguro?"
   navbar:
     title: "Renta tu carro"
     cars: "Carros"
