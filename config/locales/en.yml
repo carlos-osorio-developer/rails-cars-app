@@ -37,4 +37,12 @@ en:
     image_url: "Image URL"
     model: "Model"
     hourly_rate: "Hourly rate"
-
+  users:
+    login: "Login"
+    name: "Name"
+    email: "Email"
+    password: "Password"
+    remember_me: "Remember me"
+    log_action: "Log in"
+    sign_action: "Sign up"
+    forgot_password: "Forgot your password?"
