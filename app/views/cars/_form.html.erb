@@ -1,6 +1,6 @@
-<%= form_with(model: car) do |form| %>
+<%= form_with(model: car, html: {class: 'm-4'}) do |form| %>
   <% if car.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-danger" role="alert">
       <h2><%= pluralize(car.errors.count, "error") %> prohibited this car from being saved:</h2>
 
       <ul>
@@ -12,31 +12,30 @@
   <% end %>
 
   <div class="field">
-    <%= form.label t('cars.name') %>
-    <%= form.text_field :name %>
+    <%= form.label t('cars.name'), class: 'form-label fs-6' %>
+    <%= form.text_field :name, class: 'form-control mb-4 w-25' %>
   </div>
 
   <div class="field">
-    <%= form.label t('cars.description') %>
-    <%= form.text_area :description %>
+    <%= form.label t('cars.description'), class: 'form-label fs-6' %>
+    <%= form.text_area :description, class: 'form-control mb-4 w-25' %>
   </div>
 
   <div class="field">
-    <%= form.label t('cars.image_url') %>
-    <%= form.text_field :image_url %>
+    <%= form.label t('cars.image_url'), class: 'form-label fs-6' %>
+    <%= form.text_field :image_url, class: 'form-control mb-4 w-25' %>
   </div>
 
   <div class="field">
-    <%= form.label t('cars.model') %>
-    <%= form.number_field :model %>
+    <%= form.label t('cars.model'), class: 'form-label fs-6' %>
+    <%= form.number_field :model, class: 'form-control mb-4 w-25' %>
   </div>
 
   <div class="field">
-    <%= form.label t('cars.hourly_rate') %>
-    <%= form.number_field :hourly_rate, step: :any %>
+    <%= form.label t('cars.hourly_rate'), class: 'form-label fs-6' %>
+    <%= form.number_field :hourly_rate, step: :any, class: 'form-control mb-4 w-25' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <div class="actions btn-group">
+    <%= form.submit t('cars.offer_action'), class: 'btn btn-success' %>  
 <% end %>
