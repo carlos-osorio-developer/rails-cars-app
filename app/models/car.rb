@@ -1,6 +1,6 @@
 class Car < ApplicationRecord
   belongs_to :user
-  has_many :reviews, class_name: "Review"
+  has_many :reviews, class_name: 'Review'
 
   validates :name, presence: true
   validates :description, presence: true

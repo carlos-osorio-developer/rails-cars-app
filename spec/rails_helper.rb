@@ -50,14 +50,13 @@ RSpec.configure do |config|
   config.include Devise::Test::IntegrationHelpers, type: :request
   config.include ControllerMacros, type: :controller
 
-  config.before(:each) do 
+  config.before(:each) do
     DatabaseCleaner.start
   end
 
   config.after(:each) do
     DatabaseCleaner.clean
   end
-
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
