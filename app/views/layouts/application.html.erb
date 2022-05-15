@@ -18,7 +18,8 @@
         <%= flash[:alert] %>
       </div>
     <% end %>
-    <div class="container-fluid pt-4">
+    <% divclass = current_page?(root_path) ? "" : "container-fluid pt-4" %>
+    <div class="<%= divclass %>">
       <%= yield %>
     </div>
   </body>

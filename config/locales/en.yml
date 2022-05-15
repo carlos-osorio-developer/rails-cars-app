@@ -29,11 +29,17 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en:  
   general:
     back: "Back"
+  main:
+    welcome_msg: "Welcome to FletX, transport at your hands"
   cars:
+    rent: "Rent a car"
+    rent_title: "Rent a car for your trip"
+    rent_description: "Rent a car for your trip, or for merchandise transportation"
+    offer: "Offer a car"
+    offer_description: "Offer a car to be rented by other users"
     name: "Name"
     description: "Description"
     image_url: "Image URL"
