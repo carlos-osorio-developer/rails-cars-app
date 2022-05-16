@@ -5,6 +5,7 @@ Esta app permite al usuario ofrecer su coche para ser alquilado por otros usuari
 - ERD: El diagrama de estructura de datos que representa la base de datos es el siguiente:
 
 
+![ERD](https://user-images.githubusercontent.com/78050026/168529760-007fa444-51ed-4438-8575-537558891dc6.png)
 
 
 ## Construido con
@@ -61,6 +62,12 @@ Para obtener una copia local de la aplicación y funcionando siga estos sencillo
 - Ejecute `rails s` en la terminal y vaya a `http://localhost:3000/` en su navegador.
 
 - Registrese como usuario y haga uso de la plataforma.
+
+
+## Futuras recomendaciones (To-do)
+
+- Finalizar el sistema de reseñas.
+- Integrar con Amazon Buckets para el cargue de imágenes.
 
 
 ## Autor
