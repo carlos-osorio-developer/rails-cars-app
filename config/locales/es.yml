@@ -49,7 +49,7 @@ en:
         hourly_rate: 'Tarifa por hora'        
     errors:
       messages:
-        record_invalid: 'Huboleishon %{errors}'
+        record_invalid: 'Errores: %{errors}'
   errors:
     format: '%{attribute}%{message}'
     messages:

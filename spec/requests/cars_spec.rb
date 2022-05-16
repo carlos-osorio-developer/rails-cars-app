@@ -23,15 +23,7 @@ RSpec.describe '/cars', type: :request do
       get cars_url
       expect(response).to be_successful
     end
-  end
-
-  describe 'GET /show' do
-    it 'renders a successful response' do
-      car = Car.create! valid_attributes
-      get car_url(car)
-      expect(response).to be_successful
-    end
-  end
+  end  
 
   describe 'GET /new' do
     it 'renders a successful response' do

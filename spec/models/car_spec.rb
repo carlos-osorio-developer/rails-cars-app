@@ -8,7 +8,7 @@ RSpec.describe Car, type: :model do
       car = Car.new(name: 'Test title!', description: 'This is a test description', image_url: 'draft',
                     model: 'draft', hourly_rate: '1,3', user_id: nil)
       expect(car.valid?).to be false
-      expect(car.errors.full_messages).to include('User must exist')
+      expect(car.errors.full_messages).to include('Usermust exist')
     end
   end
 end

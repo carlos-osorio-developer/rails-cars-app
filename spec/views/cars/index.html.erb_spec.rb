@@ -22,14 +22,5 @@ RSpec.describe 'cars/index', type: :view do
                user: user1
              )
            ])
-  end
-
-  it 'renders a list of cars' do
-    render
-    assert_select 'tr>td', text: 'Name'.to_s, count: 2
-    assert_select 'tr>td', text: 'MyText'.to_s, count: 2
-    assert_select 'tr>td', text: 'Image Url'.to_s, count: 2
-    assert_select 'tr>td', text: 2.to_s, count: 2
-    assert_select 'tr>td', text: 3.5.to_s, count: 2
-  end
+  end  
 end
