@@ -39,11 +39,14 @@ en:
   main:
     welcome_msg: "Welcome to FletX, transport at your hands"
   cars:
+    title: "Available cars for rent"
+    created: "Car was succesfully offered"
     invalid: " do not allow this car to be registered"
     rent: "Rent a car"
     rent_title: "Rent a car for your trip"
     rent_description: "Rent a car for your trip, or for merchandise transportation"
     rent_action: "Rent"
+    select: "Select"
     offer: "Offer a car"
     offer_title: "Make money with your car"
     offer_description: "Offer a car to be rented by other users, and make money with it"

@@ -9,6 +9,9 @@ class CarsController < ApplicationController
   # GET /cars/1 or /cars/1.json
   def show
     @booking = Booking.new
+    respond_to do |format|
+      format.js {render layout: false} # Add this line to you respond_to block
+    end
   end
 
   # GET /cars/new
@@ -39,7 +42,7 @@ class CarsController < ApplicationController
   def update
     respond_to do |format|
       if @car.update(car_params)
-        format.html { redirect_to car_url(@car), notice: 'Car was successfully updated.' }
+        format.html { redirect_to car_url(@car), notice: t('cars.created') }
         format.json { render :show, status: :ok, location: @car }
       else
         format.html { render :edit, status: :unprocessable_entity }

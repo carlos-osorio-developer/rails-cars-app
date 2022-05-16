@@ -70,11 +70,14 @@ en:
       one: "Un error"
       other: "%{count} errores"
   cars:
+    title: "Carros disponibles para rentar"
+    created: "El carro fue ofertado correctamente"
     invalid: " no permiten que este vehículo se registre"
     rent: "Alquilar un auto"
     rent_title: "Alquilar un auto para su viaje"
     rent_description: "Alquila un auto para transportarte a tu destino, o transportar tu mercancía"
     rent_action: "Alquilar"
+    select: "Seleccionar"
     offer: "Ofrecer un auto"
     offer_title: "Genera ingresos con tu auto"
     offer_description: "Ofrece un auto para ser alquilado por otros usuarios, y genera ingresos con él"
@@ -84,7 +87,7 @@ en:
     image_url: "URL de la imagen"
     model: "Modelo"
     hourly_rate: "Tarifa por hora"
-  users:
+  users:    
     login: "Ingreso"
     signup: "Registro"
     edit: "Editar datos de usuario"
