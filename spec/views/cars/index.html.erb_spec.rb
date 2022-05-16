@@ -22,5 +22,5 @@ RSpec.describe 'cars/index', type: :view do
                user: user1
              )
            ])
-  end  
+  end
 end

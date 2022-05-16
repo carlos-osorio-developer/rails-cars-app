@@ -11,5 +11,5 @@ RSpec.describe 'cars/show', type: :view do
                           hourly_rate: 3.5,
                           user: user
                         ))
-  end  
+  end
 end
