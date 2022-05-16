@@ -10,7 +10,7 @@ class CarsController < ApplicationController
   def show
     @booking = Booking.new
     respond_to do |format|
-      format.js {render layout: false} # Add this line to you respond_to block
+      format.js { render layout: false } # Add this line to you respond_to block
     end
   end
 

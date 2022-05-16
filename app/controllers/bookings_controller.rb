@@ -1,7 +1,7 @@
 class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
-    @booking.user = current_user    
+    @booking.user = current_user
     @booking.car = Car.find(params[:booking][:car_id])
     @booking.end_time = Time.now + params[:booking][:hours].to_i.hours
     respond_to do |format|

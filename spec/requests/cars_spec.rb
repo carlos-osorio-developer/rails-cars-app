@@ -91,7 +91,7 @@ RSpec.describe '/cars', type: :request do
         car.reload
         expect(response).to redirect_to(car_url(car))
       end
-    end   
+    end
   end
 
   describe 'DELETE /destroy' do

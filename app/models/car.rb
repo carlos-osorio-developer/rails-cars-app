@@ -12,7 +12,7 @@ class Car < ApplicationRecord
 
   # use scope to filter cars that are available (no bookings)
   scope :available, lambda {
-    #check that created at is > than the current time + the hours of the booking
-    joins(:bookings).where( :bookings => { :created_at => (Time.now - 1.hour)..Time.now } )
+    # check that created at is > than the current time + the hours of the booking
+    joins(:bookings).where(bookings: { created_at: (Time.now - 1.hour)..Time.now })
   }
 end
