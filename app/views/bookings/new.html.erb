@@ -2,7 +2,7 @@
 
  <% if @booking.errors.any? %>
     <div id="error_explanation" class="alert alert-danger" role="alert">
-      <h2><%= t('general.error', :count => @booking.errors.count) %> Valió verga:</h2>
+      <h2><%= t('general.error', :count => @booking.errors.count) %> que no permiten reaizar la reserva:</h2>
 
       <ul>
         <% @booking.errors.each do |error| %>

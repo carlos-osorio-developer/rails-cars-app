@@ -31,15 +31,8 @@
 </p>
 
 <%# #Create form for booking car %>
-<strong>Reservar:</strong>
-<%= form_with(model: @booking, local: true) do |f| %>
-  <%= f.label :hours %>
-  <%= f.number_field :hours %>
-  <%= f.hidden_field :car_id, value: @car.id %>
-  <%= hidden_field_tag 'selected', 'none'  %>
-  
-  <%= f.submit 'Reservar' %>
-<% end %>  
+<%= render :partial => 'bookings/form', :object => @booking %>
+
 
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>

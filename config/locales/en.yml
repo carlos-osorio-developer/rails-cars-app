@@ -76,6 +76,8 @@ en:
     min_chars: "characters minimum"
     are_you_unhappy: "Unhappy?"
     cancel_confirmation: "Are you sure?"
+  booking:
+    success: "¡Su reserva se ha realizado con éxito!"
   navbar:
     title: "Cars Rental App"
     cars: "Cars"

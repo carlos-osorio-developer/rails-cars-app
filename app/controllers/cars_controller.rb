@@ -3,7 +3,7 @@ class CarsController < ApplicationController
 
   # GET /cars or /cars.json
   def index
-    @cars = Car.all
+    @cars = Car.all - Car.joins(:bookings).where('bookings.end_time > ?', Time.now)
   end
 
   # GET /cars/1 or /cars/1.json

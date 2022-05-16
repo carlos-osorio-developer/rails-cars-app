@@ -107,6 +107,8 @@ en:
     min_chars: "caracteres al menos"
     are_you_unhappy: "¿Insatisfecho?"
     cancel_confirmation: "¿Está seguro?"
+  booking:
+    success: "¡Su reserva se ha realizado con éxito!"
   navbar:
     title: "Renta tu carro"
     cars: "Carros"

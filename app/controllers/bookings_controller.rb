@@ -6,7 +6,7 @@ class BookingsController < ApplicationController
     @booking.end_time = Time.now + params[:booking][:hours].to_i.hours
     respond_to do |format|
       if @booking.save
-        format.html { redirect_to car_path(@booking.car), notice: 'Car was successfully created.' }
+        format.html { redirect_to car_path(@booking.car), notice: t('booking.success') }
         format.json { render :show, status: :created, location: @car }
       else
         format.html { render :new, status: :unprocessable_entity }

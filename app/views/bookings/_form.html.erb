@@ -1,0 +1,9 @@
+<strong>Reservar:</strong>
+<%= form_with(model: @booking, local: true) do |f| %>
+  <%= f.label :hours %>
+  <%= f.number_field :hours, min: 3, max: 36, value: 3 %>
+  <%= f.hidden_field :car_id, value: @car.id %>
+  <%= hidden_field_tag 'selected', 'none'  %>
+  
+  <%= f.submit 'Reservar' %>
+<% end %>  
