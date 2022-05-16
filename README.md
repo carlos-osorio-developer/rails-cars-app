@@ -15,7 +15,7 @@ Esta app permite al usuario ofrecer su coche para ser alquilado por otros usuari
 
 ## Demo:
 
-[Aplicación desplegada](http://mushroom-house.herokuapp.com/)
+[Aplicación desplegada](https://fletx-cars-app.herokuapp.com/)
 
 
 ## Instrucciones
