@@ -1,0 +1,56 @@
+<h2><%= t('users.edit') %></h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'm-4' }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label t('users.email'), class: 'form-label fs-6' %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control mb-4 w-25' %>
+  </div>
+
+  <div class="field">
+    <%= f.label t('users.address'), class: 'form-label fs-6' %><br />
+    <%= f.text_field :address, autofocus: true, class: 'form-control mb-4 w-25' %>
+  </div>
+
+  <div class="field">
+    <%= f.label t('users.phone'), class: 'form-label fs-6' %><br />
+    <%= f.text_field :phone, autofocus: true, class: 'form-control mb-4 w-25' %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t('users.password') %> <i><%= t('users.password_unchange') %></i><br />
+    <%= f.password_field :password, autocomplete: "new-password", class: 'form-control w-25' %>
+    <% if @minimum_password_length %>
+      <em><%= @minimum_password_length %> <%= t('users.min_chars') %> </em>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label t('users.password_confirmation'), class: 'form-label fs-6 mt-4' %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control mb-4 w-25' %>
+  </div>
+
+  <div class="field">
+    <%= f.label t('users.current_password') %> <i><%= t('users.password_explaining') %></i><br />
+    <%= f.password_field :current_password, autocomplete: "current-password", class: 'form-control mb-4 w-25' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit t('users.update_action'), class: 'btn btn-outline-success' %>
+  </div>
+<% end %>
+
+<h3><%= t('users.cancel') %></h3>
+
+<div class="my-4 ms-4">
+  <p><%= t('users.are_you_unhappy') %> 
+  <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+    <%= button_to t('users.cancel'), registration_path(resource_name), data: { confirm: t('users.cancel_confirmation') }, method: :delete, class: 'btn btn-danger' %></p>
+    <%= link_to t('general.back'), :back, class: "btn btn-primary" %>
+  </div>    
+</div>

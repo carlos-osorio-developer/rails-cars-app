@@ -1,0 +1,117 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  activerecord:
+    models:
+      user: 'Usuario'
+      car: 'Carro'
+    attributes:
+      user:
+        name: 'Nombre'
+        password: 'Contraseña'
+        email: 'Correo electrónico'
+        phone: 'Teléfono'
+        address: 'Dirección'
+      car:
+        name: 'Nombre'
+        image_url: 'URL de imagen'
+        description: 'Descripción'
+        model: 'Modelo'
+        hourly_rate: 'Tarifa por hora'        
+    errors:
+      messages:
+        record_invalid: 'Errores: %{errors}'
+  errors:
+    format: '%{attribute}%{message}'
+    messages:
+      # You should also include translations for other ActiveRecord errors such as "empty", "taken", etc.
+      blank: ' no puede estar en blanco'
+      taken: ' ya está en uso'
+      empty: ' no puede estar vacío'
+      invalid: ' no es válido'
+      confirmation: ' no coincide con %{attribute}'
+      too_long: ' es demasiado largo (máximo %{count} caracteres)'
+      too_short: ' es demasiado corto (mínimo %{count} caracteres)'      
+  main:
+    welcome_msg: "Bienvenido a FletX, transportes a su alcance"
+  general:
+    back: "Regresar"
+    error:
+      zero: "Ningún error"
+      one: "Un error"
+      other: "%{count} errores"
+  cars:
+    title: "Carros disponibles para rentar"
+    created: "El carro fue ofertado correctamente"
+    invalid: " no permiten que este vehículo se registre"
+    rent: "Alquilar un auto"
+    rent_title: "Alquilar un auto para su viaje"
+    rent_description: "Alquila un auto para transportarte a tu destino, o transportar tu mercancía"
+    rent_action: "Alquilar"
+    select: "Seleccionar"
+    offer: "Ofrecer un auto"
+    offer_title: "Genera ingresos con tu auto"
+    offer_description: "Ofrece un auto para ser alquilado por otros usuarios, y genera ingresos con él"
+    offer_action: "Ofrecer"
+    name: "Nombre"
+    description: "Descripción"
+    image_url: "URL de la imagen"
+    model: "Modelo"
+    hourly_rate: "Tarifa por hora"
+  users:    
+    login: "Ingreso"
+    signup: "Registro"
+    edit: "Editar datos de usuario"
+    cancel: "Cancelar mi cuenta"
+    name: "Nombre"
+    email: "Correo electrónico"
+    address: "Dirección"
+    phone: "Teléfono"
+    password: "Contraseña"
+    password_confirmation: "Confirmación de contraseña"
+    remember_me: "Recordarme"
+    log_action: "Ingresar"
+    logout_action: "Cerrar sesión"
+    sign_action: "Registrarse"
+    update_action: "Actualizar"
+    forgot_password: "Olvidé mi contraseña"
+    current_password: "Contraseña actual"
+    password_unchange: "(dejar en blanco si no quiere cambiarla)"
+    password_explaining: "(necesitamos su contraseña actual para confirmar los cambios)"
+    min_chars: "caracteres al menos"
+    are_you_unhappy: "¿Insatisfecho?"
+    cancel_confirmation: "¿Está seguro?"
+  booking:
+    success: "¡Su reserva se ha realizado con éxito!"
+  navbar:
+    title: "Renta tu carro"
+    cars: "Carros"

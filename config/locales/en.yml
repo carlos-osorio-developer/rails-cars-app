@@ -29,5 +29,59 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en:  
+  general:
+    back: "Back"
+    error:
+      zero: "No errors"
+      one: "One error"
+      other: "%{count} errors"
+  main:
+    welcome_msg: "Welcome to FletX, transport at your hands"
+  cars:
+    title: "Available cars for rent"
+    created: "Car was succesfully offered"
+    invalid: " do not allow this car to be registered"
+    rent: "Rent a car"
+    rent_title: "Rent a car for your trip"
+    rent_description: "Rent a car for your trip, or for merchandise transportation"
+    rent_action: "Rent"
+    select: "Select"
+    offer: "Offer a car"
+    offer_title: "Make money with your car"
+    offer_description: "Offer a car to be rented by other users, and make money with it"
+    offer_action: "Offer"
+    name: "Name"
+    description: "Description"
+    image_url: "Image URL"
+    model: "Model"
+    hourly_rate: "Hourly rate"    
+  users:
+    login: "Login"    
+    signup: "Sign up"
+    edit: "Edit user data"
+    cancel: "Cancel my account"
+    name: "Name"
+    email: "Email"
+    address: "Address"
+    phone: "Phone"
+    password: "Password"
+    password_confirmation: "Password confirmation"
+    remember_me: "Remember me"
+    log_action: "Log in"
+    logout_action: "Log out"
+    sign_action: "Sign up"
+    update_action: "Update"
+    forgot_password: "Forgot your password?"
+    current_password: "Current password"
+    password_unchange: "(leave blank if you don't want to change it)"
+    password_explaining: "(we need your current password to confirm your changes)"
+    min_chars: "characters minimum"
+    are_you_unhappy: "Unhappy?"
+    cancel_confirmation: "Are you sure?"
+  booking:
+    success: "¡Su reserva se ha realizado con éxito!"
+  navbar:
+    title: "Cars Rental App"
+    cars: "Cars"
+

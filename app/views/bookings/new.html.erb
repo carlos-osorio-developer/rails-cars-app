@@ -1,0 +1,13 @@
+<h1>Error!</h1>
+
+ <% if @booking.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger" role="alert">
+      <h2><%= t('general.error', :count => @booking.errors.count) %> que no permiten reaizar la reserva:</h2>
+
+      <ul>
+        <% @booking.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>

@@ -1,0 +1,65 @@
+# Additional translations at https://github.com/heartcombo/devise/wiki/I18n
+
+en:
+  devise:
+    confirmations:
+      confirmed: "Tu correo electrónico ha sido confirmado."
+      send_instructions: "En unos minutos recibirás un correo electrónico con instrucciones para confirmar tu dirección de correo electrónico."
+      send_paranoid_instructions: "Si tu dirección de correo electrónico existe en nuestra base de datos, recibirás un correo electrónico con instrucciones para confirmar tu dirección de correo electrónico en unos minutos."
+    failure:
+      already_authenticated: "Ya estás autenticado."
+      inactive: "Tu cuenta no está activada todavía."
+      invalid: "Credenciales o contraseña no válidas."
+      locked: "Tu cuenta está bloqueada."
+      last_attempt: "Te quedan una última oportunidad antes de que tu cuenta sea bloqueada."
+      not_found_in_database: "Credenciales o contraseña no válidas."
+      timeout: "Tu sesión ha expirado. Por favor, inicia sesión de nuevo para continuar."
+      unauthenticated: "Debes iniciar sesión o registrarte para continuar."
+      unconfirmed: "Debes confirmar tu dirección de correo electrónico antes de continuar."
+    mailer:
+      confirmation_instructions:
+        subject: "Instrucciones de confirmación"
+      reset_password_instructions:
+        subject: "Instrucciones de restablecimiento de contraseña"
+      unlock_instructions:
+        subject: "Instrucciones de desbloqueo"
+      email_changed:
+        subject: "Dirección de correo electrónico cambiada"
+      password_change:
+        subject: "Contraseña cambiada"
+    omniauth_callbacks:
+      failure: "No se pudo autenticar con %{kind}."
+      success: "Autenticado con %{kind}."
+    passwords:
+      no_token: "No se pudo encontrar el token de restablecimiento de contraseña."
+      send_instructions: "En unos minutos recibirás un correo electrónico con instrucciones para restablecer tu contraseña."
+      send_paranoid_instructions: "Si tu dirección de correo electrónico existe en nuestra base de datos, recibirás un correo electrónico con instrucciones para restablecer tu contraseña en unos minutos."
+      updated: "Tu contraseña ha sido actualizada. Ahora estás autenticado."
+      updated_not_active: "Tu contraseña ha sido actualizada. Debes iniciar sesión para continuar."
+    registrations:
+      destroyed: "Adios!, tu cuenta ha sido eliminada. Esperamos verte pronto."
+      signed_up: "Gracias por registrarte! Ahora estás autenticado."
+      signed_up_but_inactive: "Gracias por registrarte! Sin embargo, tu cuenta no está activada todavía. Por favor, revisa tu correo electrónico para obtener más instrucciones."
+      signed_up_but_locked: "Gracias por registrarte! Sin embargo, tu cuenta está bloqueada. Por favor, revisa tu correo electrónico para obtener más instrucciones."
+      signed_up_but_unconfirmed: "Gracias por registrarte! Sin embargo, tu cuenta no ha sido confirmada todavía. Por favor, revisa tu correo electrónico para obtener más instrucciones."
+      update_needs_confirmation: "Tu cuenta ha sido actualizada. Debes confirmar tu dirección de correo electrónico nuevamente."
+      updated: "Tu cuenta ha sido actualizada correctamente."
+      updated_but_not_signed_in: "Tu cuenta ha sido actualizada correctamente. Sin embargo, no estás autenticado."
+    sessions:
+      signed_in: "Bienvenido! Ahora estás autenticado."
+      signed_out: "Adios! Has cerrado sesión."
+      already_signed_out: "Ya has cerrado sesión."
+    unlocks:
+      send_instructions: "En unos minutos recibirás un correo electrónico con instrucciones para desbloquear tu cuenta."
+      send_paranoid_instructions: "Si tu dirección de correo electrónico existe en nuestra base de datos, recibirás un correo electrónico con instrucciones para desbloquear tu cuenta en unos minutos."
+      unlocked: "Tu cuenta ha sido desbloqueada."
+  errors:
+    messages:
+      already_confirmed: "Ya has confirmado tu cuenta. Por favor, inicia sesión."
+      confirmation_period_expired: "necesita confirmarse antes de %{period}, por favor, vuelve a enviar el correo electrónico de confirmación."
+      expired: "La contraseña ha expirado. Por favor, solicita una nueva contraseña."
+      not_found: "No se encontró el usuario."
+      not_locked: "Tu cuenta no está bloqueada."
+      not_saved:
+        one: "Hubo 1 error al guardar tu %{resource}: "
+        other: "Hubo %{count} errores al guardar tu %{resource}: "
