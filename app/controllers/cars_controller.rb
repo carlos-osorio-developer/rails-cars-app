@@ -3,7 +3,7 @@ class CarsController < ApplicationController
 
   # GET /cars or /cars.json
   def index
-    @cars = Car.all - Car.joins(:bookings).where('bookings.end_time > ?', Time.now)
+    @cars = Car.all - Car.joins(:bookings).where('bookings.end_time > ?', Time.now).group(:id)
   end
 
   # GET /cars/1 or /cars/1.json
@@ -29,7 +29,7 @@ class CarsController < ApplicationController
 
     respond_to do |format|
       if @car.save
-        format.html { redirect_to car_url(@car), notice: 'Car was successfully created.' }
+        format.html { redirect_to cars_path, notice: 'Car was successfully created.' }
         format.json { render :show, status: :created, location: @car }
       else
         format.html { render :new, status: :unprocessable_entity }
