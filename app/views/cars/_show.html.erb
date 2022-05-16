@@ -1,1 +1,16 @@
-<%= @car.id %>     
+<%= form_with(model: @booking, local: true) do |f| %>
+  <%= f.label :hours %>
+  <%= f.number_field :hours, min: 3, max: 36, value: 3 %>
+  <%= f.hidden_field :car_id, value: @car.id %>
+  <%= f.hidden_field :cost, value: @car.hourly_rate %>  
+  <p id="notice" class="alert alert-info mt-4" role="alert">Precio<p>    
+  <script>  
+    var hours = document.getElementById('booking_hours');
+    var cost = document.getElementById('booking_cost').value;
+    hours.addEventListener('change', function() {
+      var total = hours.value * cost;
+      document.getElementById('notice').innerHTML = 'Costo por hora: $' + cost + '<br>Total: $' + total;
+    });        
+  </script>  
+  <%= f.submit 'Reservar', data: { confirm: "¿Desea realizar su reserva?" }, class: 'btn btn-success' %>    
+<% end %>
