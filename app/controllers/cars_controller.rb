@@ -7,7 +7,9 @@ class CarsController < ApplicationController
   end
 
   # GET /cars/1 or /cars/1.json
-  def show; end
+  def show
+    @booking = Booking.new
+  end
 
   # GET /cars/new
   def new

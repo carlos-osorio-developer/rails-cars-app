@@ -5,6 +5,6 @@ FactoryBot.define do
     sequence(:image_url) { |n| "draft#{n}" }
     sequence(:model) { |n| "200#{n}" }
     sequence(:hourly_rate) { |n| "#{n}" }
-    user
-  end
+    user { User.first }
+  end  
 end
