@@ -39,8 +39,8 @@ Para obtener una copia local de la aplicación y funcionando siga estos sencillo
 - Use su cuenta de gitHub y su terminal para clonar este repositorio a su computadora:
 
 ```
-
-`git clone git@github.com:carlos-osorio-developer/rails-cars-app.git`
+git clone git@github.com:carlos-osorio-developer/rails-cars-app.git`
+```
 
 - Go to the cloned directory:
 - Vaya al directorio clonado:
@@ -68,6 +68,8 @@ Para obtener una copia local de la aplicación y funcionando siga estos sencillo
 
 - Finalizar el sistema de reseñas.
 - Integrar con Amazon Buckets para el cargue de imágenes.
+- Integrar con Google Maps para la ubicación de los coches.
+- Hacer una versión de la aplicación para dispositivos móviles (responsiveness).
 
 
 ## Autor
